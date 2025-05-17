@@ -1,0 +1,18 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+Optimización:
+  - Implementar code splitting
+  - Optimizar imágenes y assets
+  - Usar memoización cuando sea necesario
+  - Implementar lazy loading
+  - Monitorear Core Web Vitals
+  
+  Convenciones:
+  - Mantener bundle size bajo
+  - Optimizar re-renders
+  - Implementar caching estratégico
+
+  - Monitorear performance en producción

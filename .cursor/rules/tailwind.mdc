@@ -1,0 +1,18 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+Organización:
+  - Crear componentes base reutilizables
+  - Usar @apply para estilos repetitivos
+  - Mantener clases en orden lógico
+  - Agrupar clases por categoría (layout, spacing, typography, etc.)
+  
+  Convenciones:
+  - Usar variables CSS para valores repetitivos
+  - Implementar dark mode cuando sea necesario
+  - Mantener consistencia en espaciado y colores
+  - Usar componentes para patrones de diseño comunes
+
+  - Evitar clases inline muy largas

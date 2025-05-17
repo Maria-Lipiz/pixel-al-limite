@@ -1,0 +1,21 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+Framer Motion:
+  - Usar variants para animaciones complejas
+  - Implementar AnimatePresence para animaciones de entrada/salida
+  - Optimizar con useReducedMotion
+  - Mantener animaciones accesibles
+
+  
+  GSAP:
+  - Usar timelines para animaciones secuenciales
+  - Implementar ScrollTrigger para animaciones al scroll
+  - Optimizar con gsap.to() y gsap.from()
+  - Mantener animaciones performantes
+
+  ANIMACIONES EN GENERAL:
+
+  - Hacer las animaciones siempre en 'use client' como un componente reutilizable y personalizable

@@ -1,0 +1,27 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+  Estructura de directorios:
+  - app/: Contiene todas las rutas y páginas
+    - (routes)/: Agrupaciones de rutas relacionadas
+    - components/: Componentes específicos de la página
+    - layouts/: Layouts compartidos
+  - components/: Componentes reutilizables
+    - ui/: Componentes de UI básicos
+    - features/: Componentes específicos de funcionalidades
+  - lib/: Utilidades y configuraciones
+  - hooks/: Hooks personalizados
+  - types/: Definiciones de tipos TypeScript
+  - styles/: Estilos globales y temas
+
+  Convenciones:
+  - Usar Server Components por defecto
+  - Implementar Client Components solo cuando sea necesario
+  - Seguir el patrón de diseño de "Container/Presentational"
+  - Implementar lazy loading para componentes pesados
+  - Utilizar Image component para optimización de imágenes
+  - Implementar metadata para SEO
+  - Usar loading.tsx y error.tsx para manejo de estados
+

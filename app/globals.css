@@ -1,26 +1,260 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #030712;
+  --foreground: #FFFFFF;
+
+  /* 🎨 Paleta personalizada */
+  --color-jet: #000000;
+  --color-light: #030712;
+  --color-white: #FFFFFF;
+  --color-deepblue: #020617;
+  --color-astralblue: #0A1A2F;
+  --color-secondary: #777C85;
+  --color-electric: #38BDF8;
+  --color-grape: #413C7B;
+  --color-mint: #00F0B5;
+  --color-magenta: #FF4ECD;
+  --color-charcoal: #1C1C1E;
+  --color-graphite: #2C2C2E;
+  --color-slate: #4A4A4F;
+  --color-silver: #A1A1AA;
+  --color-purple:#8B5CF6;
+  --color-lemon: #EEFF00;
+
+  /* 🅰️ Tipografías */
+  --font-alt: 'Satoshi', sans-serif;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-background: var(--color-jet);
+  --color-foreground: var(--color-white);
+  --font-sans: var(--font-primary);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #030712;
+    --foreground: #FFFFFF;
   }
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-primary);
+}
+
+/* Fondo de cuadrícula global */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  z-index: -10;
+  background-image:
+    linear-gradient(to right, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+  background-size: 40px 40px;
+  animation: pulse 2s linear infinite;
+  pointer-events: none;
+}
+
+/* ✨ BOTÓN BRILLANTE */
+.btn-glow {
+  position: relative;
+  display: inline-block;
+  padding: 0.75rem 2rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  font-size: 1rem;
+  color: white;
+  background-image: linear-gradient(to right, #FF4ECD, #38BDF8);
+  transition: all 0.3s ease;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.btn-glow::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 120%;
+  height: 120%;
+  background: linear-gradient(to right, #FF4ECD, #38BDF8);
+  transform: translate(-50%, -50%);
+  filter: blur(25px);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: -1;
+  border-radius: 0.75rem;
+}
+
+.btn-glow:hover::before {
+  opacity: 0.7;
+}
+
+/* ✨ TEXTO CON GRADIENTE ANIMADO */
+.animated-gradient-text {
+  background: linear-gradient(
+    270deg,
+    var(--color-mint),
+    var(--color-electric),
+    var(--color-magenta),
+    var(--color-purple),
+    var(--color-lemon),
+    var(--color-mint)
+  );
+  background-size: 600% 600%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradientShift 8s ease-in-out infinite;
+}
+
+.animated-gradient-text-greenblue {
+  background: linear-gradient(
+    270deg,
+    var(--color-mint),
+    var(--color-electric),
+    var(--color-mint)
+  );
+  background-size: 600% 600%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradientShift 8s ease-in-out infinite;
+}
+
+.animated-gradient-text-pinkyellow {
+  background: linear-gradient(
+    270deg,
+    var(--color-magenta),
+    var(--color-lemon),
+    var(--color-magenta)
+  );
+  background-size: 600% 600%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradientShift 8s ease-in-out infinite;
+}
+
+.animated-gradient-text-purplepink {
+  background: linear-gradient(
+    270deg,
+    var(--color-purple),
+    var(--color-magenta),
+    var(--color-purple)
+  );
+  background-size: 600% 600%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradientShift 8s ease-in-out infinite;
+}
+
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.scrollbar-hide {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+@keyframes gradient-move {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 100% 50%; }
+}
+
+.animate-gradient-move {
+  background-size: 200% 200%;
+  animation: gradient-move 6s linear infinite;
+}
+
+@keyframes grid-pulse {
+  0% { background-position: 0 0; }
+  100% { background-position: 100px 100px; }
+}
+
+@keyframes random-x {
+  0% { transform: translateX(-200%); opacity: 0; }
+  20% { opacity: 1; }
+  80% { opacity: 1; }
+  100% { transform: translateX(200%); opacity: 0; }
+}
+
+@keyframes random-y {
+  0% { transform: translateY(-200%); opacity: 0; }
+  20% { opacity: 1; }
+  80% { opacity: 1; }
+  100% { transform: translateY(200%); opacity: 0; }
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scaleX(1); opacity: 0.7; }
+  50% { transform: scaleX(1.5); opacity: 1; }
+}
+
+.laser-glow {
+  position: absolute;
+  border-radius: 9999px;
+  z-index: 1;
+  pointer-events: none;
+  mix-blend-mode: color-dodge;
+  transition: opacity 0.3s ease-in-out;
+  animation: pulse 1.5s ease-in-out infinite;
+}
+
+.laser-glow-x {
+  width: 400px;
+  height: 2px;
+  animation-name: random-x, pulse;
+  animation-duration: 4s, 1.5s;
+  animation-timing-function: linear, ease-in-out;
+  animation-iteration-count: infinite, infinite;
+}
+
+.laser-glow-y {
+  height: 400px;
+  width: 2px;
+  animation-name: random-y, pulse;
+  animation-duration: 4s, 1.5s;
+  animation-timing-function: linear, ease-in-out;
+  animation-iteration-count: infinite, infinite;
+}
+
+
+
+@keyframes animatedBorder {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.animated-border {
+  background-size: 300% 300%;
+  animation: animatedBorder 8s ease infinite;
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px transparent inset !important;
+  -webkit-text-fill-color: white !important;
+  transition: background-color 5000s ease-in-out 0s;
 }

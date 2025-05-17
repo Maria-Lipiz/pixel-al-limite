@@ -1,0 +1,36 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+ Mejores prácticas para optimización SEO en proyectos Next.js:
+
+  - Utilizar el archivo metadata en cada página para definir:
+    - title: Título único y descriptivo para cada página.
+    - description: Descripción relevante y atractiva.
+    - keywords: Palabras clave específicas de la página.
+    - canonical: URL canónica para evitar contenido duplicado.
+    - openGraph y twitterCard: Metadatos para compartir en redes sociales.
+
+  - Usar etiquetas semánticas HTML5 (<header>, <main>, <footer>, <nav>, <article>, <section>) para estructurar el contenido.
+
+  - Implementar rutas limpias y amigables para el usuario y los motores de búsqueda.
+
+  - Optimizar imágenes usando el componente <Image> de Next.js, incluyendo atributos alt descriptivos.
+
+  - Añadir sitemap.xml y robots.txt en la carpeta public/ para facilitar la indexación.
+
+  - Evitar contenido duplicado y redirecciones innecesarias.
+
+  - Implementar breadcrumbs y rich snippets cuando sea relevante.
+
+  - Asegurarse de que la web sea mobile-friendly y pase los Core Web Vitals.
+
+  - Usar enlaces internos relevantes y descriptivos (anchor text claro).
+
+  - Cargar scripts de terceros de forma asíncrona o diferida para no afectar el rendimiento.
+
+  - Verificar la accesibilidad (a11y) para mejorar la experiencia de usuario y el SEO.
+
+  - Anadir aria label a todos los componententes como botones o imagenes para mejorar la accesibilidad
+

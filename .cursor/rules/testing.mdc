@@ -1,0 +1,17 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+Unit Tests:
+  - Testear componentes de forma aislada
+  - Implementar mocks para dependencias externas
+  - Cubrir casos de éxito y error
+  - Mantener tests independientes
+  
+  Integration Tests:
+  - Testear flujos completos
+  - Verificar interacciones entre componentes
+  - Implementar tests de accesibilidad
+
+  - Mantener tests mantenibles

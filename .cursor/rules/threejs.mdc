@@ -1,0 +1,17 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+Optimización:
+  - Implementar instancing para objetos repetidos
+  - Usar useMemo para cálculos costosos
+  - Implementar LOD (Level of Detail)
+  - Optimizar geometrías y materiales
+  
+  Convenciones:
+  - Separar lógica 3D en componentes reutilizables
+  - Usar Leva para controles de desarrollo
+  - Implementar cleanup en useEffect
+  - Mantener escenas modulares
+  - Documentar parámetros de materiales y luces

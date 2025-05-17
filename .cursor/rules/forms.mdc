@@ -1,0 +1,19 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+Mejores prácticas para formularios:
+  
+  React Hook Form:
+  - Implementar validación con Zod
+  - Usar Controller para componentes controlados
+  - Implementar manejo de errores consistente
+  - Mantener formularios accesibles
+  
+  Zod:
+  - Crear schemas reutilizables
+  - Implementar mensajes de error personalizados
+  - Usar transformaciones cuando sea necesario
+
+  - Mantener validaciones específicas por campo

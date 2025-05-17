@@ -1,0 +1,57 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+1. Paleta de colores
+     - Utilizar SIEMPRE las variables CSS definidas en :root para colores (ej: var(--color-electric), var(--color-mint), etc).
+     - No usar colores hardcodeados en los componentes, salvo para degradados o efectos especiales justificados.
+     - Mantener la coherencia cromática en todos los elementos interactivos y de fondo.
+
+  2. Tipografía y texto
+     - Usar la fuente principal definida en el layout (var(--font-primary)) para todo el texto.
+     - Utilizar var(--font-alt) solo para casos especiales o destacados.
+     - Mantener jerarquía clara de títulos (h1, h2, h3...) y párrafos.
+     - El lenguaje debe ser el español (España) y debe ir acorde al tono ya empleado en las partes ya construidas de la web
+
+  3. Espaciado y layout
+     - Utilizar SIEMPRE utilidades de Tailwind para márgenes, paddings y grids.
+     - Mantener consistencia en los espacios verticales y horizontales entre secciones y componentes.
+     - Usar clases de Tailwind para breakpoints y responsividad.
+     -Todas las secciones <section> deben seguir este espaciado: px-6 py-20 md:px-8 lg:px-12
+
+  4. Botones y elementos interactivos
+     - Usar clases y estilos personalizados como .btn-glow para botones principales.
+     - Mantener transiciones suaves y efectos de hover claros.
+     - Los botones deben tener contraste suficiente y ser accesibles.
+
+  5. Textos con gradiente
+     - Usar las clases .animated-gradient-text y .animated-gradient-text-greenblue para textos destacados.
+     - No crear nuevas clases de gradiente sin justificación de diseño.
+
+  6. Accesibilidad
+     - Asegurarse de que todos los textos tengan suficiente contraste con el fondo.
+     - Usar aria-label en botones y enlaces importantes.
+     - Incluir siempre atributos alt descriptivos en imágenes.
+
+  7. Scroll y overflow
+     - Usar la clase .scrollbar-hide para ocultar scrollbars solo cuando sea estrictamente necesario para la experiencia visual.
+     - Evitar ocultar scrollbars en áreas donde el usuario pueda perder contenido.
+
+  8. Animaciones
+     - Usar animaciones CSS solo para mejorar la experiencia de usuario, nunca para distraer.
+     - Mantener la duración de las animaciones entre 0.3s y 1s para transiciones suaves.
+
+  9. Componentización
+     - Crear componentes reutilizables para patrones visuales repetidos (botones, tarjetas, secciones, etc).
+     - No duplicar estilos; usar @apply en Tailwind o clases utilitarias.
+
+  10. Dark mode
+      - No implementar nunca dark-mode
+
+  11. Nomenclatura y organización
+      - Nombrar las clases personalizadas en inglés y de forma descriptiva.
+      - Documentar en el CSS cualquier clase personalizada que no sea autoexplicativa.
+
+
+  Estas reglas deben seguirse SIEMPRE para asegurar una identidad visual fuerte, profesional y coherente en toda la web.

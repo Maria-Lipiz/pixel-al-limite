@@ -1,0 +1,20 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+
+  Tipado:
+  - Evitar 'any' - usar tipos específicos
+  - Utilizar interfaces para objetos y tipos para uniones
+  - Implementar tipos estrictos para props de componentes
+  - Usar type guards cuando sea necesario
+  - Implementar tipos para respuestas de API
+  
+  Convenciones:
+  - Nombrar interfaces con prefijo 'I' (ej: IUserProps)
+  - Nombrar tipos con sufijo 'Type' (ej: UserType)
+  - Usar type inference cuando sea posible
+  - Documentar tipos complejos con JSDoc
+  - Mantener tipos en archivos separados cuando sean reutilizables
+
