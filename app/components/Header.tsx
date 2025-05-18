@@ -1,43 +1,11 @@
 'use client'
 
 import { useState, useEffect } from 'react'
-import { motion, AnimatePresence } from 'framer-motion'
-import {
-  AlignRight,
-  X,
-  ChevronDown,
-  Mail,
-  Instagram,
-  Linkedin,
-  Twitter,
-  MessageCircleMore,
-  Briefcase,
-  ShoppingBag,
-  Code2,
-  Settings,
-  Search,
-  Megaphone,
-  Share2,
-  Brain,
-  Citrus,
-  BookOpenText,
-  GraduationCap
-} from 'lucide-react'
 import Link from 'next/link'
 import Image from 'next/image';
 
 
 const Header = () => {
-  const [isOpen, setIsOpen] = useState(false)
-  const [hasScrolled, setHasScrolled] = useState(false)
-  const [isServiciosMobileOpen, setIsServiciosMobileOpen] = useState(false)
-  const [isSectoresMobileOpen, setIsSectoresMobileOpen] = useState(false)
-  const [isServiciosOpen, setIsServiciosOpen] = useState(false)
-  const [isSectoresOpen, setIsSectoresOpen] = useState(false)
-
-
-
-  
 
   return (
     <header

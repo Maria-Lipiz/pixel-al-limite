@@ -44,13 +44,15 @@ const PixelButton = ({
     >
       <img
         src="/icons/pixel.svg"
-        alt="Icono Pixel"
+        alt=""
+        aria-hidden
         className="w-4 h-4 rotate-90 transition-transform duration-300 group-hover:-translate-x-1"
       />
       {text}
       <img
         src="/icons/pixel.svg"
-        alt="Icono Pixel"
+        alt=""
+        aria-hidden
         className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1"
       />
     </motion.a>

@@ -287,7 +287,7 @@ export default function Home() {
           {/* Cabecera */}
           <div className="text-center mb-16">
             <h2 className="tracking-tighter text-3xl sm:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl font-semibold text-white mb-6">
-              ¿Por qué elegir Píxel al Límite para aunmentar <span className="animated-gradient-text-pinkyellow">tus ventas?</span>
+              ¿Por qué elegir Píxel al Límite para aumentar <span className="animated-gradient-text-pinkyellow">tus ventas?</span>
             </h2>
             <p className="sr-only">
               En nuestra Agencia de Marketing Digital para PyMEs y empresas creemos en el trabajo bien hecho, las decisiones basadas y en datos y nuestro mayor compromiso es proporcionarte las herramientas necesarias para hacer de tu negocio un referente en el mercado.

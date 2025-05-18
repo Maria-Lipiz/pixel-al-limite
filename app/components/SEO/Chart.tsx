@@ -28,14 +28,14 @@ const Chart = () => {
   const springViews = useSpring(0, { stiffness: 100, damping: 20 })
   const springClicks = useSpring(0, { stiffness: 100, damping: 20 })
   const pointRadius = height * 0.02
-  const yViews = useTransform(springViews, v => padding + height - (v / maxViews) * height - pointRadius*1.5)
-  const yClicks = useTransform(springClicks, v => padding + height - (v / maxViews) * height - pointRadius*1.5)
+  const yViews = useTransform(springViews, v => padding + height - (v / maxViews) * height - pointRadius * 1.5)
+  const yClicks = useTransform(springClicks, v => padding + height - (v / maxViews) * height - pointRadius * 1.5)
 
   const [viewsValue, setViewsValue] = useState(0)
   const [clicksValue, setClicksValue] = useState(0)
   useEffect(() => {
-    const unsubViews = springViews.on('change', (v) => setViewsValue(Math.round(v)))
-    const unsubClicks = springClicks.on('change', (v) => setClicksValue(Math.round(v)))
+    const unsubViews = springViews.on('change', v => setViewsValue(Math.round(v)))
+    const unsubClicks = springClicks.on('change', v => setClicksValue(Math.round(v)))
     return () => {
       unsubViews()
       unsubClicks()
@@ -52,7 +52,7 @@ const Chart = () => {
   }, [viewsValue, clicksValue])
 
   useEffect(() => {
-    const unsub = xMotion.on('change', (x) => {
+    const unsub = xMotion.on('change', x => {
       const leftBound = padding + width * 0.3
       const rightBound = padding + width * 0.7
       if (x < leftBound) setTooltipOffsetX(32)
@@ -121,24 +121,19 @@ const Chart = () => {
       if (!containerRef.current) return
       setContainerSize({
         width: containerRef.current.clientWidth,
-        height: containerRef.current.clientHeight,
+        height: containerRef.current.clientHeight
       })
     }
-  
-    // Espera un frame para asegurarte de que el elemento existe
     const raf = requestAnimationFrame(() => {
       handleResize()
       if (containerRef.current) {
         const ro = new ResizeObserver(handleResize)
         ro.observe(containerRef.current)
-        // Cleanup
         return () => ro.disconnect()
       }
     })
-  
     return () => cancelAnimationFrame(raf)
   }, [])
-  
 
   return (
     <div
@@ -153,6 +148,8 @@ const Chart = () => {
         viewBox={`0 0 ${containerSize.width} ${containerSize.height}`}
         preserveAspectRatio="none"
         className="absolute inset-0"
+        role="presentation"
+        aria-hidden="true"
       >
         <defs>
           <linearGradient id="line-gradient-views" x1="0" y1="0" x2="1" y2="0">
@@ -168,6 +165,7 @@ const Chart = () => {
             <stop offset="100%" stopColor="#FF4ECD" stopOpacity="0" />
           </linearGradient>
         </defs>
+
         <polyline
           fill="none"
           stroke="url(#line-gradient-views)"
@@ -179,6 +177,7 @@ const Chart = () => {
           }).join(' ')}
           strokeLinecap="round"
         />
+
         <polyline
           fill="none"
           stroke="url(#line-gradient-clicks)"
@@ -190,6 +189,7 @@ const Chart = () => {
           }).join(' ')}
           strokeLinecap="round"
         />
+
         {gridValues.map(v => {
           const y = padding + height - (v / maxGrid) * height
           return (
@@ -201,8 +201,9 @@ const Chart = () => {
                 fill="#fff"
                 fillOpacity={0.25}
                 fontSize={Math.max(14, height * 0.01)}
-                fontFamily="var(--font-primary), sans-serif"
-                alignmentBaseline="middle"
+                fontFamily="sans-serif"
+                dominantBaseline="middle"
+                aria-hidden="true"
               >
                 {v.toLocaleString('es-ES')}
               </text>
@@ -214,14 +215,8 @@ const Chart = () => {
       {(mouseInside || lastX !== null) && (
         <>
           <motion.div className="absolute top-0 bottom-0 w-px bg-white/30" style={{ x: lastX }} />
-          <motion.div
-            className="absolute w-3 h-3 rounded-full border-2 border-white bg-[#EEFF00]"
-            style={{ x: lastX, y: yViews }}
-          />
-          <motion.div
-            className="absolute w-3 h-3 rounded-full border-2 border-white bg-[#FF4ECD]"
-            style={{ x: lastX, y: yClicks }}
-          />
+          <motion.div className="absolute w-3 h-3 rounded-full border-2 border-white bg-[#EEFF00]" style={{ x: lastX, y: yViews }} />
+          <motion.div className="absolute w-3 h-3 rounded-full border-2 border-white bg-[#FF4ECD]" style={{ x: lastX, y: yClicks }} />
           <motion.div
             ref={tooltipRef}
             className="absolute top-0 bg-black/80 rounded-full px-6 py-3 border border-white/10 text-white text-sm pointer-events-none"
@@ -229,8 +224,8 @@ const Chart = () => {
             initial={false}
             animate={{ left: 'unset', right: 'unset' }}
           >
-            <div className="text-zinc-400">Visitas: <span> {viewsValue}</span></div>
-            <div className="font-semibold">Ventas: <span className="font-bold"> {clicksValue}</span></div>
+            <div className="text-zinc-400">Visitas: <span>{viewsValue}</span></div>
+            <div className="font-semibold">Ventas: <span className="font-bold">{clicksValue}</span></div>
           </motion.div>
         </>
       )}
@@ -238,4 +233,4 @@ const Chart = () => {
   )
 }
 
-export default Chart;
+export default Chart

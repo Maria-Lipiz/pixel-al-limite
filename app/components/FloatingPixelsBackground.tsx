@@ -54,7 +54,8 @@ const FloatingPixelsBackground = () => {
     let height = (canvas.height = window.innerHeight)
     let animationFrameId: number
 
-    let pixelCount = getPixelCountByScreenSize()
+    const pixelCount = getPixelCountByScreenSize()
+
 
     const pixels: Pixel[] = new Array(pixelCount).fill(null).map(() => {
       const size = Math.random() * 7 + 4  // 🔧 tamaños más suaves: 4px–11px

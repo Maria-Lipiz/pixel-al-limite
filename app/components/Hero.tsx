@@ -67,15 +67,19 @@ const Hero = ({
         >
           <img
             src="/icons/pixel.svg"
-            alt="Logo Agencia Pixel al Límite"
-            className="w-3 h-3 sm:w-4 sm:h-4 xl:w-5 xl:h-5 2xl:w-6 2xl:h-6 rotate-90 transition-transform duration-300 group-hover:-translate-x-1"
+            alt="" // <- Añadir alt vacío para evitar el error de accesibilidad
+            aria-hidden
+            className="w-3 h-3 sm:w-4 sm:h-4 xl:w-6 xl:h-6 2xl:w-8 2xl:h-8 rotate-90 transition-transform duration-300 group-hover:-translate-x-1"
           />
+
           {primaryButtonText}
           <img
             src="/icons/pixel.svg"
+            alt="" // <- Añadir alt vacío para evitar el error de accesibilidad
             aria-hidden
-            className="w-3 h-3 sm:w-4 sm:h-4 xl:w-5 xl:h-5 2xl:w-6 2xl:h-6 transition-transform duration-300 group-hover:translate-x-1"
+            className="w-3 h-3 sm:w-4 sm:h-4 xl:w-6 xl:h-6 2xl:w-8 2xl:h-8 transition-transform duration-300 group-hover:translate-x-1"
           />
+
         </motion.a>
 
         <motion.a
