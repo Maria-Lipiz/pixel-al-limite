@@ -13,7 +13,6 @@ interface PricingCardProps {
   gradientFrom?: string
   gradientVia?: string
   gradientTo?: string
-  innerGradient?: boolean
   backgroundColor?: string
   textColor?: string
   buttonTextColor?: string
@@ -41,7 +40,6 @@ const PricingCard = ({
   gradientFrom = '#ff00cc',
   gradientVia = '#333399',
   gradientTo = '#00ffcc',
-  innerGradient = false,
   backgroundColor = '#030712',
   textColor = '#ffffff',
   buttonTextColor = '#ffffff',
