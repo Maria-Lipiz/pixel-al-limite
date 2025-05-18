@@ -515,7 +515,7 @@ No entregamos productos aislados: diseñamos estrategias que captan, posicionan 
           <p className="tracking-tighter text-3xl sm:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl font-semibold text-white">
             ¿Listo para transformar tu <span className="animated-gradient-text-greenblue">presencia online?</span>
           </p>
-          <p className="text-base sm:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl text-gray-500 font-medium mb-2">Cuentanos tu proyecto y te ayudaremos a hacerlo realidad</p>
+          <p className="text-base sm:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl font-mono text-gray-500 font-medium mb-2">Cuentanos tu proyecto y te ayudaremos a hacerlo realidad</p>
           
           <PixelButton
             href="/contacto"
