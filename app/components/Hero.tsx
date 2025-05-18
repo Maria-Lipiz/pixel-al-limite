@@ -3,6 +3,7 @@
 import React, { ReactNode } from 'react'
 import { motion } from 'framer-motion'
 import { ArrowUpRight } from 'lucide-react'
+import Image from 'next/image'
 
 interface HeroProps {
   title: ReactNode
@@ -57,29 +58,32 @@ const Hero = ({
           px-4 py-3 sm:px-6 sm:py-3.5 lg:px-8 lg:py-4 xl:px-10 xl:py-4.5 2xl:px-12 2xl:py-5
           transition-all bg-gradient-to-r from-[var(--from)] to-[var(--to)] hover:from-[var(--hover-from)] hover:to-[var(--hover-to)]"
           style={{
-            // Variables CSS para que sigan siendo configurables
-            ['--from' as any]: gradientFrom,
-            ['--to' as any]: gradientTo,
-            ['--hover-from' as any]: hoverGradientFrom,
-            ['--hover-to' as any]: hoverGradientTo,
-          }}
+            '--from': gradientFrom,
+            '--to': gradientTo,
+            '--hover-from': hoverGradientFrom,
+            '--hover-to': hoverGradientTo,
+          } as React.CSSProperties}
           aria-label={primaryButtonText}
         >
-          <img
+          <Image
             src="/icons/pixel.svg"
-            alt="" // <- Añadir alt vacío para evitar el error de accesibilidad
-            aria-hidden
+            alt=""
+            role="presentation"
+            width={32}
+            height={32}
             className="w-3 h-3 sm:w-4 sm:h-4 xl:w-6 xl:h-6 2xl:w-8 2xl:h-8 rotate-90 transition-transform duration-300 group-hover:-translate-x-1"
           />
 
           {primaryButtonText}
-          <img
+
+          <Image
             src="/icons/pixel.svg"
-            alt="" // <- Añadir alt vacío para evitar el error de accesibilidad
-            aria-hidden
+            alt=""
+            role="presentation"
+            width={32}
+            height={32}
             className="w-3 h-3 sm:w-4 sm:h-4 xl:w-6 xl:h-6 2xl:w-8 2xl:h-8 transition-transform duration-300 group-hover:translate-x-1"
           />
-
         </motion.a>
 
         <motion.a
