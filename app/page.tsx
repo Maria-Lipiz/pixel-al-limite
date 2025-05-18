@@ -171,7 +171,7 @@ export default function Home() {
         <Hero
           title={<>Tu éxito digital comienza con un <span className="animated-gradient-text">píxel.</span></>}
           subtitle="Marketing digital para PyMEs y empresas que buscan crecer"
-          primaryButtonText="Solicita presupuesto gratis"
+          primaryButtonText="¡Pide presupuesto gratis!"
           secondaryButtonText="Consulta nuestros servicios"
           gradientFrom="#00F0B5"
           gradientTo="#38BDF8"
@@ -355,9 +355,9 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="px-6 py-20 md:px-8 lg:px-12 h-[80vh] justify-center items-center flex flex-col md:flex-row">
+        <section className="px-6 py-20 md:px-8 lg:px-12 h-[80vh] justify-center items-center flex flex-col lg:flex-row">
           {/* H1 principal SEO optimizado con animación de entrada */}
-          <p className="tracking-tighter max-w-xl text-3xl sm:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl font-semibold text-white mb-6">
+          <p className="tracking-tighter max-w-xl text-3xl sm:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl font-semibold text-center lg:text-left text-white mb-6">
             Solicita ahora tu presupuesto <span className="animated-gradient-text-purplepink">gratis</span>
           </p>
           
@@ -436,7 +436,7 @@ No entregamos productos aislados: diseñamos estrategias que captan, posicionan 
             Sabemos que cada proyecto es único. Sin embargo, ofrecemos packs completos orientativos según el nivel de presencia y posicionamiento que necesite tu negocio. Todos incluyen presupuesto personalizado -según si necesitas más o menos servicios- y asesoría profesional.
           </p>
 
-          <div className="max-w-6xl mx-auto grid gap-8 sm:grid-cols-1 md:grid-cols-3">
+          <div className="max-w-6xl mx-auto grid gap-8 sm:grid-cols-1 lg:grid-cols-3">
             <PricingCard
               title="Básico"
               price="850€"

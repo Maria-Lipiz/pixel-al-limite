@@ -53,8 +53,8 @@ const Hero = ({
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 1.5, duration: 0.8 }}
-          className="group font-mono flex z-1 items-center gap-2 sm:gap-4 rounded-full font-semibold text-white
-          text-base sm:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl
+          className="group font-mono flex z-1 items-center justify-center gap-2 sm:gap-4 rounded-full font-bold sm:font-semibold text-white
+          text-sm sm:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl
           px-4 py-3 sm:px-6 sm:py-3.5 lg:px-8 lg:py-4 xl:px-10 xl:py-4.5 2xl:px-12 2xl:py-5
           transition-all bg-gradient-to-r from-[var(--from)] to-[var(--to)] hover:from-[var(--hover-from)] hover:to-[var(--hover-to)]"
           style={{
@@ -91,8 +91,8 @@ const Hero = ({
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 1.5, duration: 0.8 }}
-          className="group font-mono flex z-1 items-center gap-2 sm:gap-4 rounded-full font-semibold text-white bg-transparent border border-[#2C2C2E] transition-all
-          text-base sm:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl
+          className="group font-mono flex z-1 items-center justify-center gap-2 sm:gap-4 rounded-full font-bold sm:font-semibold text-white bg-transparent border border-[#2C2C2E] transition-all
+          text-sm sm:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl
           px-4 py-3 sm:px-6 sm:py-3.5 lg:px-8 lg:py-4 xl:px-10 xl:py-4.5 2xl:px-12 2xl:py-5 hover:bg-[#020617]"
           aria-label={secondaryButtonText}
         >
