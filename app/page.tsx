@@ -1,5 +1,4 @@
 import dynamic from 'next/dynamic'
-import Head from 'next/head'
 import Script from 'next/script'
 import { ChartColumn, FolderCode , Search, Megaphone, Instagram, GitCompare } from 'lucide-react'
 import {
