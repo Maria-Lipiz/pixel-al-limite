@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://www.pixelallimite.com
+
+# Sitemaps
+Sitemap: https://www.pixelallimite.com/sitemap.xml
