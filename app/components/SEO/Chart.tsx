@@ -117,18 +117,28 @@ const Chart = () => {
   const gridValues = Array.from({ length: Math.floor(maxGrid / gridStep) + 1 }, (_, i) => i * gridStep)
 
   useEffect(() => {
-    if (!containerRef.current) return
     const handleResize = () => {
+      if (!containerRef.current) return
       setContainerSize({
-        width: containerRef.current!.clientWidth,
-        height: containerRef.current!.clientHeight,
+        width: containerRef.current.clientWidth,
+        height: containerRef.current.clientHeight,
       })
     }
-    handleResize()
-    const ro = new ResizeObserver(handleResize)
-    ro.observe(containerRef.current)
-    return () => ro.disconnect()
+  
+    // Espera un frame para asegurarte de que el elemento existe
+    const raf = requestAnimationFrame(() => {
+      handleResize()
+      if (containerRef.current) {
+        const ro = new ResizeObserver(handleResize)
+        ro.observe(containerRef.current)
+        // Cleanup
+        return () => ro.disconnect()
+      }
+    })
+  
+    return () => cancelAnimationFrame(raf)
   }, [])
+  
 
   return (
     <div
