@@ -154,6 +154,7 @@ export default function Home() {
             <li>Agencia de marketing digital en Ciudad Real: diseño web y estrategias SEM</li>
             <li>Diseño web en Soria: marketing digital completo para empresas que quieren crecer</li>
             <li>Automatización de procesos en Cuenca: digitaliza tu negocio con tecnología</li>
+            <li>Marketing Digital para PyMEs en Ponferrada: impulsa tu negocio con estrategias modernas</li>
             <li>Consultoría de marketing en Ávila: estrategias de posicionamiento y conversión</li>
             <li>Diseño y desarrollo web en Teruel: soluciones digitales para pequeñas empresas</li>
             <li>SEO técnico en Burgos: mejora la velocidad, estructura y ranking de tu sitio</li>
@@ -342,9 +343,9 @@ export default function Home() {
             {/* Fila 3 */}
             <div className="grid grid-cols-1 md:grid-cols-2 w-full gap-4">
               <div className="p-4 border-1 border-white/10">
-                <h3 className="text-lg sm:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl font-semibold">Estrategia antes que ejecución</h3>
-                <p className="text-base sm:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl text-gray-500 font-medium mb-2">Nos gusta trabajar con un objetivo claro</p>
-                <p className="text-sm sm:text-base font-mono text-gray-300 font-regular mb-2">Antes de diseñar, desarrollar o lanzar campañas, definimos una hoja de ruta clara alineada con tus objetivos. No improvisamos: planificamos para ganar.</p>
+                <h3 className="text-lg sm:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl font-semibold">Agencia joven e innovadora</h3>
+                <p className="text-base sm:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl text-gray-500 font-medium mb-2">No nos gusta hacer lo mismo que los demás</p>
+                <p className="text-sm sm:text-base font-mono text-gray-300 font-regular mb-2">Somos un equipo joven, dinámico y siempre atento a las últimas tendencias y tecnologías. Nos encanta innovar y crear soluciones únicas para nuestros clientes.</p>
               </div>
               <div className="p-4 border-1 border-white/10">
                 <h3 className="text-lg sm:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl font-semibold">Usamos las mejores herramientas</h3>
@@ -362,7 +363,7 @@ export default function Home() {
           </p>
           
           <PixelButton
-            href="#contacto"
+            href="/contacto"
             text="¡Quiero presupuesto!"
             ariaLabel="Botón para contactar"
             gradient="linear-gradient(to right, #8B5CF6,#FF4ECD )"

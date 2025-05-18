@@ -205,11 +205,11 @@ const Chart = () => {
         <>
           <motion.div className="absolute top-0 bottom-0 w-px bg-white/30" style={{ x: lastX }} />
           <motion.div
-            className="absolute w-3 h-3 rounded-full border-2 border-white bg-[#A1A1AA]"
+            className="absolute w-3 h-3 rounded-full border-2 border-white bg-[#EEFF00]"
             style={{ x: lastX, y: yViews }}
           />
           <motion.div
-            className="absolute w-3 h-3 rounded-full border-2 border-white bg-[#00F0B5]"
+            className="absolute w-3 h-3 rounded-full border-2 border-white bg-[#FF4ECD]"
             style={{ x: lastX, y: yClicks }}
           />
           <motion.div
