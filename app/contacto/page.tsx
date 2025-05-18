@@ -154,7 +154,8 @@ export default function ContactPage() {
         <option value="sem">Publicidad en Google y Meta (SEM)</option>
         <option value="rrss">Gestión de redes sociales</option>
         <option value="automatizaciones">Automatizaciones para tu empresa</option>
-        <option value="otros">Varios</option>
+        <option value="automatizaciones">Branding</option>
+        <option value="otros">Pack de servicios</option>
       </select>
     </div>
   </div>
