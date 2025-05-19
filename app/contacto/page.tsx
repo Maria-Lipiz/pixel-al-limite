@@ -56,7 +56,7 @@ export default function ContactPage() {
       </h1>
 
       <p className="text-gray-300 font-mono text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl font-normal">
-        ¿Tienes un proyecto en mente? ¡Contacta con nosotros! En menos de 12 horas nos pondremos en contacto contigo y concertaremos una reunión. Si podemos ayudarte, te haremos una propuesta en el momento
+        ¿Tienes un proyecto en mente? ¡Contacta con nosotros! En menos de 12 horas nos pondremos en contacto contigo y concertaremos una reunión para analizar tu caso y hacer una propuesta.
       </p>
 
       <div className="space-y-4 text-white font-mono text-xl sm:text-2xl flex flex-col justify-center">
