@@ -75,7 +75,7 @@ export default function ContactPage() {
 
         </div>
         <div>
-          <span className="text-gray-300 text-lg sm:text-xl">¿Un correo?</span><br />
+          <span className="text-gray-300 text-lg sm:text-xl">¿Que tal un correo?</span><br />
           <a href="mailto:hello@pixelallimite.com" className="hover:text-[var(--color-magenta)] transition-colors text-xl sm:text-2xl">hello@pixelallimite.com</a>
         </div>
       </div>
