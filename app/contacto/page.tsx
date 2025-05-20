@@ -135,7 +135,7 @@ export default function ContactPage() {
         name="user_budget"
         className="w-full py-2 border-b border-gray-500 text-white placeholder-gray-400 bg-[#030712] focus:outline-none focus:border-b-white valid:border-b-[#8B5CF6] transition-all duration-200"
       >
-        <option value="">Presupuesto estimado</option>
+        <option value="">Tu resupuesto estimado</option>
         <option value="menos_1000">Menos de 1.000 €</option>
         <option value="1000_3000">1.000 € - 3.000 €</option>
         <option value="3000_6000">3.000 € - 6.000 €</option>
