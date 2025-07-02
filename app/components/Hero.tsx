@@ -20,7 +20,7 @@ interface HeroProps {
 const Hero = ({
   title,
   subtitle,
-  primaryButtonText = 'Solicita presupuesto gratis',
+  primaryButtonText = 'Solicita presupuesto',
   secondaryButtonText = 'Consulta nuestros servicios',
   gradientFrom = '#38BDF8',
   gradientTo = '#00F0B5',

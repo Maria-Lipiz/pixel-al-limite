@@ -171,7 +171,7 @@ export default function Home() {
         <Hero
           title={<>Tu éxito digital comienza con un <span className="animated-gradient-text">píxel.</span></>}
           subtitle="Marketing digital para PyMEs y empresas que buscan crecer"
-          primaryButtonText="¡Pide presupuesto gratis!"
+          primaryButtonText="¡Pide presupuesto!"
           secondaryButtonText="Consulta nuestros servicios"
           gradientFrom="#00F0B5"
           gradientTo="#38BDF8"
