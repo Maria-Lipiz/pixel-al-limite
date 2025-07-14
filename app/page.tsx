@@ -1,26 +1,15 @@
 import dynamic from 'next/dynamic'
 import Script from 'next/script'
-import { ChartColumn, FolderCode , Search, Megaphone, Instagram, GitCompare } from 'lucide-react'
 import {
   IconNumber1Small,
   IconNumber2Small,
-  IconNumber3Small,
-  IconNumber4Small,
-  IconNumber5Small,
-  IconNumber6Small
 } from '@tabler/icons-react'
 
 // ✅ Importaciones dinámicas optimizadas
 const FloatingPixelsBackground = dynamic(() => import('./components/FloatingPixelsBackground'))
-const AnimatedText = dynamic(() => import('./components/AnimatedText'))
-const LaserGrid = dynamic(() => import('./components/LaserGrid'))
-const FloatingWrapper = dynamic(() => import('./components/FloatingWrapper'))
 const Hero = dynamic(() => import('./components/Hero'))
 const GlowCard = dynamic(() => import('./components/GlowCardComponent'))
-const PricingCard = dynamic(() => import('./components/Pricing'))
-const DarkLightReveal = dynamic(() => import('./components/DarkLightReveal'))
 const PixelButton = dynamic(() => import('./components/PixelButton'))
-const Chart = dynamic(() => import('./components/SEO/Chart'))
 
 export const metadata = {
   title: 'Pixel al Límite | Agencia de Marketing Digital para PyMEs',
