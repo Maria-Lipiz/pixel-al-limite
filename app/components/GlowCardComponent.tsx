@@ -78,13 +78,13 @@ const GlowCard = ({ title, text, icon }: GlowCardProps) => {
         <div className="bg-transparent border border-white/20 p-1 mb-2 rounded-full items-center justify-center w-auto h-auto text-white animate-pulse">
           {icon}
         </div>
-        <h3 className="text-white text-sm sm:text-base lg:text-lg xl:text-xl 2xl:text-2xl font-semibold leading-tight">
+        <h3 className="text-white text-base sm:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl font-semibold leading-tight">
           {title}
         </h3>
         
         
         
-        <p className="text-gray-300 font-mono text-xs lg:text-sm xl:text-base 2xl:text-xl leading-relaxed whitespace-pre-line">
+        <p className="text-gray-100 font-mono text-sm lg:text-base xl:text-lg 2xl:text-xl leading-relaxed whitespace-pre-line">
           {text}
         </p>
       </div>

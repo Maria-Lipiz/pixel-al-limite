@@ -21,11 +21,6 @@ const Header = () => {
             />
         </Link>
 
-        <nav className="flex items-center gap-0.5 relative"> {/*Aquí poner un hidden cuando haga menú en movil*/}
-        <Link href="/contacto" className="px-4 py-2 ml-2 font-semibold xl:font-bold text-base lg:text-lg xl:text-xl rounded-full bg-gradient-to-r from-[var(--color-purple)] to-[var(--color-electric)] transition-all duration-300 hover:from-[var(--color-electric)] hover:to-[var(--color-mint)]">¿Hablamos?</Link>
-      </nav>
-
-
     </header>
   )
 }
