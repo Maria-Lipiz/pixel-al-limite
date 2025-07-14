@@ -119,7 +119,7 @@ export default function ContactPage() {
     </div>
   </div>
 
-  <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+  <div className="grid grid-cols-1 gap-6">
     <div>
       <label className="sr-only">Presupuesto estimado</label>
       <select
@@ -128,24 +128,9 @@ export default function ContactPage() {
       >
         <option value="">Tu resupuesto estimado</option>
         <option value="menos_1000">Menos de 8.000 € -No puedo ayudarte-</option>
-        <option value="1000_3000">Entre 8.000 y 10.000</option>
-        <option value="3000_6000">Entre 10.000 y 20.000</option>
+        <option value="1000_3000">Entre 8.000€ y 10.000€</option>
+        <option value="3000_6000">Entre 10.000€ y 20.000€</option>
         <option value="6000_10000">Mas de 20.000€</option>
-      </select>
-    </div>
-    <div>
-      <select
-        name="user_service"
-        className="w-full py-2 border-b border-gray-500 text-white placeholder-gray-400 bg-[#030712] focus:outline-none focus:border-b-white valid:border-b-[#EEFF00] transition-all duration-200"
-      >
-        <option value="">¿Que quieres mejorar?</option>
-        <option value="diseno_web">Diseño y desarrollo web</option>
-        <option value="seo">Posicionamiento SEO</option>
-        <option value="sem">Publicidad en Google y Meta (SEM)</option>
-        <option value="rrss">Gestión de redes sociales</option>
-        <option value="automatizaciones">Automatizaciones para tu empresa</option>
-        <option value="automatizaciones">Branding</option>
-        <option value="otros">Pack de servicios</option>
       </select>
     </div>
   </div>
@@ -154,7 +139,7 @@ export default function ContactPage() {
     <label className="sr-only">Mensaje*</label>
     <textarea
       name="message"
-      placeholder="Cuéntame aquí lo que consideres"
+      placeholder="Cuéntame aquí lo que necesites"
       required
       rows={5}
       className="w-full py-2 border-b border-gray-500 text-white placeholder-gray-400 focus:outline-none focus:border-b-white valid:border-b-white transition-all duration-200"
