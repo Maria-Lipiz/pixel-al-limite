@@ -1,9 +1,6 @@
 'use client'
 
 import React, { ReactNode } from 'react'
-import { motion } from 'framer-motion'
-import { ArrowUpRight } from 'lucide-react'
-import Image from 'next/image'
 
 interface HeroProps {
   title: ReactNode
@@ -37,8 +34,6 @@ const Hero = ({
       >
         {subtitle}
       </p>
-
-      {/* Botones */}
       
     </section>
   )
