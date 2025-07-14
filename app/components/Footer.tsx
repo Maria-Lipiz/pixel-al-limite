@@ -13,14 +13,16 @@ const Footer = () => {
 
         {/* Logo y redes */}
         <div className="space-y-4 justify-center items-center text-center sm:text-start">
+          {/*
           <img
             src="/logo.svg"
             alt="Pixel al Límite, agencia de marketing digital y diseño web"
             className="h-12 sm:h-14 lg:h-16 w-auto"
           />
-          <h3 className="text-base sm:text-lg lg:text-xl font-semibold mt-4" aria-hidden="true">¡Escríbenos!</h3>
+          */}
           {/*<h3 className="text-base sm:text-lg lg:text-xl font-semibold mt-4" aria-hidden="true">¡Síguenos!</h3>*/}
           <div className="flex gap-4 mt-2 justify-center">
+            {/*
           <a href="https://wa.me/34611733341" target="_blank" rel="noopener noreferrer" aria-label="Escribir WhatsApp a Pixel al Límite" title="Twitter">
               <IconBrandWhatsapp className="w-5 h-5 sm:w-7 sm:h-7 lg:w-9 lg:h-9 text-white opacity-80 hover:opacity-100 transition-transform hover:scale-125" />
             </a>
@@ -30,6 +32,7 @@ const Footer = () => {
             <a href="tel:+34611733341" target="_blank" rel="noopener noreferrer" aria-label="llamar a Pixel al Límite" title="Twitter">
               <Phone className="w-5 h-5 sm:w-7 sm:h-7 lg:w-9 lg:h-9 text-white opacity-80 hover:opacity-100 transition-transform hover:scale-125" />
             </a>
+            */}
             
           </div>
         </div>

@@ -56,26 +56,17 @@ export default function ContactPage() {
       </h1>
 
       <p className="text-gray-300 font-mono text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl font-normal">
-        ¿Tienes un proyecto en mente? ¡Contacta con nosotros! En menos de 12 horas nos pondremos en contacto contigo y concertaremos una reunión para analizar tu caso y hacer una propuesta.
+        Si cumples los requisitos y me gusta tu proyecto, trabajaremos juntos.
       </p>
 
       <div className="space-y-4 text-white font-mono text-xl sm:text-2xl flex flex-col justify-center">
-      <a
-        href="https://wa.me/34611733341"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="inline-flex items-center gap-2 text-white font-mono hover:text-[#00F0B5] transition-colors"
-      >
-        <FaWhatsapp className="w-10 h-10" />
-        ¡Escríbenos por WhatsApp!
-      </a>
         <div>
-          <span className="text-gray-300 text-lg sm:text-xl">¿Prefieres llamarnos?</span><br />
+          <span className="text-gray-300 text-lg sm:text-xl">Para que todo sea mas ágil, llámame.</span><br />
           <a href="tel:+34611733341" className="hover:text-[var(--color-lemon)] transition-colors text-xl sm:text-2xl">+34 611 733 341</a>
 
         </div>
         <div>
-          <span className="text-gray-300 text-lg sm:text-xl">¿Que tal un correo?</span><br />
+          <span className="text-gray-300 text-lg sm:text-xl">¿Que te da cosa? Me envias un correo</span><br />
           <a href="mailto:hello@pixelallimite.com" className="hover:text-[var(--color-magenta)] transition-colors text-xl sm:text-2xl">hello@pixelallimite.com</a>
         </div>
       </div>
@@ -136,11 +127,10 @@ export default function ContactPage() {
         className="w-full py-2 border-b border-gray-500 text-white placeholder-gray-400 bg-[#030712] focus:outline-none focus:border-b-white valid:border-b-[#8B5CF6] transition-all duration-200"
       >
         <option value="">Tu resupuesto estimado</option>
-        <option value="menos_1000">Menos de 1.000 €</option>
-        <option value="1000_3000">1.000 € - 3.000 €</option>
-        <option value="3000_6000">3.000 € - 6.000 €</option>
-        <option value="6000_10000">6.000 € - 10.000 €</option>
-        <option value="10000_mas">Más de 10.000 €</option>
+        <option value="menos_1000">Menos de 8.000 € -No puedo ayudarte-</option>
+        <option value="1000_3000">Entre 8.000 y 10.000</option>
+        <option value="3000_6000">Entre 10.000 y 20.000</option>
+        <option value="6000_10000">Mas de 20.000€</option>
       </select>
     </div>
     <div>
@@ -148,7 +138,7 @@ export default function ContactPage() {
         name="user_service"
         className="w-full py-2 border-b border-gray-500 text-white placeholder-gray-400 bg-[#030712] focus:outline-none focus:border-b-white valid:border-b-[#EEFF00] transition-all duration-200"
       >
-        <option value="">Servicios</option>
+        <option value="">¿Que quieres mejorar?</option>
         <option value="diseno_web">Diseño y desarrollo web</option>
         <option value="seo">Posicionamiento SEO</option>
         <option value="sem">Publicidad en Google y Meta (SEM)</option>
@@ -164,7 +154,7 @@ export default function ContactPage() {
     <label className="sr-only">Mensaje*</label>
     <textarea
       name="message"
-      placeholder="¡Cuéntanos con detalle tu proyecto!"
+      placeholder="Cuéntame aquí lo que consideres"
       required
       rows={5}
       className="w-full py-2 border-b border-gray-500 text-white placeholder-gray-400 focus:outline-none focus:border-b-white valid:border-b-white transition-all duration-200"
